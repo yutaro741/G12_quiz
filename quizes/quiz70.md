@@ -4,9 +4,9 @@ INPUT
 ```.py
 def iPv4machine():
     for a in range(256):#Line 1
-        for b in range(256):Line 2
-            for c in range(256):Line 3
-                for d in range(256):Line 4
+        for b in range(256):#Line 2
+            for c in range(256):#Line 3
+                for d in range(256):#Line 4
                     print(f"{a}.{b}.{c}.{d}")
 
 
