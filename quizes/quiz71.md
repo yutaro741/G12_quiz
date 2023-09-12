@@ -11,11 +11,11 @@ def hliPv6machine(N:int):
     out = []
     alf = {0:"0", 1:"1", 2:"2", 3:"3", 4:"4", 5:"5", 6:"6", 7:"7", 8:"8", 9:"9", 10:"A", 11:"B", 12:"C", 13:"D", 14:"E", 15:"F"}#Change within base 10 to base 16
     while len(out)<N:#Loop until number of iPv6 gets more than N
-        s = ""
+        all = ""
         for i in range(8):#Loop for 8 structures
             for i in range(4):#Loop for 4 characters
-                s += alf[random.randint(0, 15)]#Add random 1-digit number with base 16
-            s += ":"#Add ":" in each structures
+                all += alf[random.randint(0, 15)]#Add random 1-digit number with base 16
+            all += ":"#Add ":" in each structures
         out.append(s[:-1])#Remove ":" for the last structure
         out = list(set(out))#Check if there is no same iPv6.
     return out
